@@ -128,3 +128,15 @@ $('#soft').click(function(){
         window.localStorage.setItem('SelectedItems', JSON.stringify(selectedItems));
     }
 })
+$('#Pajamas').click(()=>{
+    let quantity = parseInt($('#Pajamas').text());
+    if(quantity >1){
+        $('#Pajamas-qt').text(--quantity)
+    }
+    console.log(quantity);
+})
+$('#Pajamas').click(()=>{
+    let quantity = parseInt($('#Pajamas-qt').text());
+    console.log(quantity);
+    $('#Pajamas-qt').text(++quantity)
+})

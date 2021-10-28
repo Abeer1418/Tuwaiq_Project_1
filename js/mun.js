@@ -1,3 +1,4 @@
+let sum = 0;
 $(document).ready(function(){
     let selectedItems =  JSON.parse(window.localStorage.getItem('SelectedItems'));
     for(let i=0; i<selectedItems.length; i++ ){
@@ -14,4 +15,10 @@ $(document).ready(function(){
         </div>
     </div>
 </a>`)
+sum = sum + selectedItems[i].qty * selectedItems[i].price
+    }
+    $('#totalPrice').text(sum)
+})
+$('#ok').click(function(){
+    localStorage.removeItem('SelectedItems')
 })
