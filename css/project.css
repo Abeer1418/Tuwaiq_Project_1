@@ -55,3 +55,15 @@ h1{
     width: 90%;
     height: 300px;
 }
+
+#ok{
+
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+
+
+}
